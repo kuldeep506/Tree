@@ -15,7 +15,6 @@ public class Main {
         obj.insert(11);
         obj.deleteNode(45);
         obj.deleteNode(6);
-
         obj.preOrderTraversal();
 
     }

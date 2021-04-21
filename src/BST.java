@@ -64,7 +64,7 @@ public class BST {
      * postOrder traversal
      */
     public void postOrderTraversal() {
-        preOrderTraversal(root);
+        postOrderTraversal(root);
     }
 
     private void postOrderTraversal(Node node) {
