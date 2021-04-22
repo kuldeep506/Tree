@@ -1,3 +1,5 @@
+import com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector;
+
 public class BST {
     public Node root;
 
@@ -165,6 +167,27 @@ public class BST {
         }
         return node;
 
+    }
+
+    /**
+     * this method returns whether the searched value is present or not in tree.
+     * @param value
+     * @return true or false according to condition.
+     */
+    public Boolean search(int value) {
+        return search(root, value);
+    }
+
+    private Boolean search(Node node, int value) {
+        if (node == null)
+            return false;
+        if (node != null && node.data == value)
+            return true;
+        else if (value > node.data) {
+            return search(node.right, value);
+        } else {
+            return search(node.left, value);
+        }
     }
 }
 

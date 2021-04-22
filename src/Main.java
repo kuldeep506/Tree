@@ -1,5 +1,3 @@
-import sun.reflect.generics.tree.Tree;
-
 public class Main {
     public static void main(String[] args) {
         BST obj =new BST();
@@ -15,7 +13,9 @@ public class Main {
         obj.insert(11);
         obj.deleteNode(45);
         obj.deleteNode(6);
-        obj.preOrderTraversal();
+        //obj.preOrderTraversal();
+        System.out.println(obj.search(1));
+        System.out.println(obj.search(999));
 
     }
 }
